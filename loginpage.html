@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+<form>
+
+    <a class="submit-btn col-md-4 ml-4 " href="#" role="button" id="button">login</a><br>
+    <a class="submit-btn col-md-4 ml-4" href="#" role="button" id="button1">Regiser</a>
+
+</form>
+
+    <form name="myForm" onsubmit="return(validate());">
+    <div class="popup">
+        <div class="popup-content" >
+
+            <div class="social-icons">
+                <img src="fb.jpg">
+                <img src="tw.jpg">
+                <img src="gp.jpg">
+                </div>
+
+            <h2>Login page</h2>
+            Email id:
+            <input type="text" placeholder="emailid" name="Email" id="Email"><br><br>
+            password:
+            <input type="password" placeholder="password" name="Pwd" id="Pwd1"><br><br>
+            <!-- <a href="#" class="button" type="submit">Login</a> -->
+            <button type="submit" class="submit-btn">Log In</button><br>
+            <!-- <a href="#" class="button" id="close">close</a> -->
+            <input type="button" value="close" id="close" class="submit-btn">
+        </div>
+    </div>
+    </form>
+    <form name="myForm1" onsubmit="return(validate1());">
+    <div class="popup1">
+        <div class="popup-content1">
+            <h2>Registration Form</h2>
+            <div class="social-icons">
+                <img src="fb.jpg">
+                <img src="tw.jpg">
+                <img src="gp.jpg">
+                </div>
+            <input type="text" name="name" class="input-field" placeholder="name" required><br><br>
+        <input type="text" name="empid" class="input-field" placeholder="emp-id" required><br>
+        <input type="radio" id="male" name="gender" value="male" id="gender">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" id="gender">
+        <label for="female">Female</label><br>
+        <input type="password" name="password" class="input-field" placeholder="password" required><br><br>
+     <input type="password" name="confirm_password" class="input-field" placeholder="confirm password" 
+     required><br><br>
+     <input type="checkbox" class="checkbox"><span>I agree to the terms & conditions</span><br>
+    
+            <!-- <a href="#" class="button">Register</a> -->
+            <input type="submit"  value="Register" class="submit-btn" id="save"><br>
+            <!-- <a href="#" class="button" id="close1">close</a> -->
+            <input type="button" value="close" id="close1" class="submit-btn">
+        </form>
+        </div>
+    </div>
+</form>
+
+    <script src="./style.js"></script>
+
+    <script src="/jquery-3.5.1.slim.min.js"></script>
+    <script src="./bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
